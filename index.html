@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adiba Khan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="leftbox">
+      <div class="firstpart1">
+        <h2>New Year Countdown</h2>
+        <p>
+          <span id="days">0</span>D :
+          <span id="hours">0</span>H :
+          <span id="minutes">0</span>M :
+          <span id="seconds">0</span>S
+        </p>
+        <button class="button" onclick="startCountdown()">SHOW TIMER</button>
+      </div>
+      <div class="secondpart1">
+        <h2>Feedback Form</h2>
+        <p>Please share your thoughts about my website!</p>
+        <form id="feedbackForm">
+          <label for="feedbackName">Your Name</label>
+          <input type="text" id="feedbackName" name="name" placeholder="Enter your name" required>
+          <label for="feedbackEmail">Your Email</label>
+          <input type="email" id="feedbackEmail" name="email" placeholder="Enter your email" required>
+          <label for="websiteLook">How does the website look? (Select an option)</label>
+          <select id="websiteLook" name="rating" required>
+            <option value="">Select an option</option>
+            <option value="Wow, I love it!">Wow, I love it!</option>
+            <option value="It’s good.">It’s good.</option>
+            <option value="It’s okay.">It’s okay.</option>
+            <option value="Needs a lot of improvement.">Needs a lot of improvement.</option>
+          </select>
+          <label for="suggestions">Suggestions for Improvement</label>
+          <textarea id="suggestions" name="suggestions" placeholder="Your feedback"></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="confirmation" style="display: none; color: green;">Thank you for your feedback!</p>
+      </div>
+    </div>
+    <div class="rightbox">
+      <div class="firstpart2">
+        <div class="image-circle">
+          <img src="me.jpg" alt="My Picture" class="circle-img">
+        </div>
+      </div>
+      <div class="secondpart2">
+        <h2>About Me</h2>
+        <p>Hi, I am Adiba Khan, and this is my first attempt to create a personalized portfolio website. It’s simple, but I’m proud of it!</p>
+        <p>Building this has taught me how websites work, and I hope to keep improving.</p>
+        <p>Skills: HTML, CSS, and starting with JavaScript!</p>
+        <p> Besides all this I really love writing .</p>
+        
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
